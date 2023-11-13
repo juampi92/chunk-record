@@ -37,8 +37,24 @@ Useful to simply get started with the model.
 pipenv run python record.py --silent
 ```
 
-To try different models. Check them 
+To try different models. [Check them all here](https://pypi.org/project/openai-whisper/).
 
 ```bash
 pipenv run python record.py --silent --model=base
 ```
+
+To use a fixed microphone. Note that `--microphone=pick` does not work with `--silent`.
+
+```bash
+pipenv run python record.py --silent --microphone="MacBook Pro Microphone"
+```
+
+To add the content to a file after running the model. (you won't see the "start" prompt)
+
+```bash
+pipenv run python record.py --microphone="default" >> file.txt
+```
+
+## To-do
+
+- [ ] Fix the Ctrl+D exit. Make it gracefully exit.
