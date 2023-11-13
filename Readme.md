@@ -1,4 +1,4 @@
-# Live Whisper
+# Chunk Whisper
 
 This is a simple whisper CLI application that instead of streaming whisper, it will only run the model after a 3 second pause.
 
